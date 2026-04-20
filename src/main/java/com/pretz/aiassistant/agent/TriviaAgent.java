@@ -1,4 +1,4 @@
-package com.pretz.aiassistant;
+package com.pretz.aiassistant.agent;
 
 import com.embabel.agent.api.annotation.AchievesGoal;
 import com.embabel.agent.api.annotation.Action;
@@ -7,12 +7,11 @@ import com.embabel.agent.api.common.Ai;
 import com.pretz.aiassistant.dto.TriviaRequest;
 import com.pretz.aiassistant.dto.TriviaResponse;
 
-@Agent(description = "Ollama AI agent for generating responses")
-public class OllamaAgent implements AiAgent {
+@Agent(description = "Plain trivia agent")
+public class TriviaAgent {
 
-    @Override
     @Action
-    @AchievesGoal(description = "Generates a response based on the input prompt")
+    @AchievesGoal(description = "Generate a straightforward trivia response")
     public TriviaResponse processInput(TriviaRequest input, Ai ai) {
         return ai.withDefaultLlm().createObject(
                 """
