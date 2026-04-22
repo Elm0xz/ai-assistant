@@ -17,7 +17,6 @@ public class TriviaService {
         this.agentPlatform = agentPlatform;
     }
 
-    //TODO design and implement more complicated logic that would use the embabel features better
     public TriviaResponse processInput(TriviaRequest input) {
         return AgentInvocation.builder(agentPlatform)
                 .options(new ProcessOptions()
