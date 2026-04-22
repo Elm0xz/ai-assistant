@@ -1,5 +1,6 @@
 package com.pretz.aiassistant;
 
+import com.embabel.agent.config.annotation.EnableAgents;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

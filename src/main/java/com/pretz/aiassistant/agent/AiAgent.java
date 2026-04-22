@@ -1,4 +1,4 @@
-package com.pretz.aiassistant;
+package com.pretz.aiassistant.agent;
 
 import com.embabel.agent.api.common.Ai;
 import com.pretz.aiassistant.dto.TriviaRequest;

@@ -22,7 +22,7 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.embabel.agent:embabel-agent-starter:${embabelAgentVersion}")
-    implementation("com.embabel.agent:embabel-agent-starter-ollama:0.3.5")
+    implementation("com.embabel.agent:embabel-agent-starter-ollama:${embabelAgentVersion}")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
